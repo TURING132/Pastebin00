@@ -3,39 +3,53 @@
 </script>
 <template>
     <div class="main-wrapper">
-        <div class="text-wrapper">
-            <div class="button-bar">
-                <n-button strong secondary type="tertiary">
-                    &nbsp;Edit text&nbsp;
-                </n-button>
-                <n-button strong secondary type="tertiary">
-                    Upload File
-                </n-button>
-            </div>
-            <div class="text-area">
-                <slot name='text'>
-                    <!-- 插槽，留给代码输入&高亮 -->
-                </slot>
-            </div>
+        <div class="button-bar">
+            <n-button strong secondary type="tertiary">
+                &nbsp;Edit text&nbsp;
+            </n-button>
+            <n-button strong secondary type="tertiary">
+                Upload File
+            </n-button>
+        </div>
+        <div class="text-area">
+            <textarea id="paste-panel" placeholder="Put your paste here" name="input" cols="100" rows="10"></textarea>     
         </div>
     </div>
 </template>
 <style scoped>
     .main-wrapper{
         /* background-color: green; */
-        position: relative;
-        height: 600px;
-    }
-    .main-wrapper .text-wrapper{
-        /* background-color: hotpink; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         width: 70%;
-        height: 600px;
-        position: absolute;
-        left: 50%;
-        margin:  0 -35%;
+        margin:10px;
+        box-sizing: border-box;
+        border:1px solid black;
     }
-    .text-wrapper .text-area{
-        height: 565px;
+    .button-bar{
+        display: flex;
+        flex-direction: row;
+        
+        width: 100%;
+        
+        border:1px solid black;
+    }
+    .text-area{
+        width: 100%;
+        display: flex;
+
+        padding:1px;
         border: 1px rgb(221, 221, 221) solid;
+    }
+    textarea{
+        resize: vertical;
+
+        width: 100%;
+
+        border:transparent;
+        outline:none;
     }
 </style>
