@@ -1,5 +1,6 @@
 <script setup>
     import {NButton} from 'naive-ui'
+    import {NUpload} from 'naive-ui'
 </script>
 <template>
     <div class="main-wrapper">
@@ -7,9 +8,19 @@
             <n-button strong secondary type="tertiary">
                 &nbsp;Edit text&nbsp;
             </n-button>
-            <n-button strong secondary type="tertiary">
-                Upload File
-            </n-button>
+            <n-upload
+                action="wait for api"
+                    :headers="{
+                    //wait for api
+                    }"
+                    :data="{
+                    //wait for api
+                    }"
+                >
+                <n-button strong secondary type="tertiary">
+                    Upload File
+                </n-button>
+            </n-upload>
         </div>
         <div class="text-area">
             <textarea id="paste-panel" placeholder="Put your paste here" name="input" cols="100" rows="10"></textarea>     
