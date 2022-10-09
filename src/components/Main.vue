@@ -9,12 +9,12 @@
                 &nbsp;Edit text&nbsp;
             </n-button>
             <n-upload
-                action="wait for api"
-                    :headers="{
-                    //wait for api
+                action="请求提交的地址"
+                    :headers="{//HTTP 请求需要附加的 Headers
+                    'naive-info': 'hello!'//提交表单需要附加的数据
                     }"
                     :data="{
-                    //wait for api
+                    'naive-data': 'cool! naive!'
                     }"
                 >
                 <n-button strong secondary type="tertiary">
