@@ -82,6 +82,7 @@
 #setting-panel>div>input,select{
     width: 300px;
     height: 30px;
+    box-sizing: border-box;
 }
 </style>
 
