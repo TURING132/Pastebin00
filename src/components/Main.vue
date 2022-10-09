@@ -1,6 +1,6 @@
 <script setup>
-    import {NButton} from 'naive-ui'
-    import {NUpload} from 'naive-ui'
+    import {NButton,NMessageProvider} from 'naive-ui'
+    import UploadButton from './UploadButton.vue'
 </script>
 <template>
     <div class="main-wrapper">
@@ -8,19 +8,9 @@
             <n-button strong secondary type="tertiary">
                 &nbsp;Edit text&nbsp;
             </n-button>
-            <n-upload
-                action="请求提交的地址"
-                    :headers="{//HTTP 请求需要附加的 Headers
-                    'naive-info': 'hello!'//提交表单需要附加的数据
-                    }"
-                    :data="{
-                    'naive-data': 'cool! naive!'
-                    }"
-                >
-                <n-button strong secondary type="tertiary">
-                    Upload File
-                </n-button>
-            </n-upload>
+            <n-message-provider>
+            <UploadButton/>
+            </n-message-provider>
         </div>
         <div class="text-area">
             <textarea id="paste-panel" placeholder="Put your paste here" name="input" cols="100" rows="10"></textarea>     
