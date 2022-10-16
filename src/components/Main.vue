@@ -35,6 +35,7 @@
         flex-direction: row;
         
         width: 100%;
+        height:36px;
         
         /* border:1px solid black; */
     }
@@ -44,6 +45,7 @@
         /* flex-direction: column; */
         
         padding:1px;
+        box-sizing: border-box;
         border: 1px rgb(221, 221, 221) solid;
     }
     textarea{
