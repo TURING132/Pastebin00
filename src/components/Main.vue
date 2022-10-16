@@ -28,7 +28,7 @@
         width: 70%;
         margin:10px;
         box-sizing: border-box;
-        border:1px solid black;
+        /* border:1px solid black; */
     }
     .button-bar{
         display: flex;
@@ -36,18 +36,19 @@
         
         width: 100%;
         
-        border:1px solid black;
+        /* border:1px solid black; */
     }
     .text-area{
         width: 100%;
         display: flex;
-
+        /* flex-direction: column; */
+        
         padding:1px;
         border: 1px rgb(221, 221, 221) solid;
     }
     textarea{
         resize: vertical;
-
+        height: 400px;
         width: 100%;
 
         border:transparent;

@@ -52,7 +52,7 @@
     margin:20px;
 
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #setting-panel>p{
     padding: 5px;

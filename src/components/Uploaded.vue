@@ -40,7 +40,7 @@ p{
     padding-top: 10px;
 
     box-sizing: border-box;
-    border: 1px solid black;   
+    /* border: 1px solid black;    */
 }
 #uploaded-panel label{
     height: 15px;

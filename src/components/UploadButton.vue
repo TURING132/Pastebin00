@@ -20,6 +20,7 @@ export default defineComponent({
     const message = useMessage();
     return {
       async beforeUpload(data) {
+          console.log(data);
         let filename = data.file.file.name.split('.').pop().toLowerCase();
         let correctFile = false;
         support.forEach(element => {
